@@ -4,7 +4,7 @@
     <title>Homepage</title>
     <style>
         body {
-            background-color: #252B59; /* Dark blue background */
+            background-color: #102E44;
             margin: 0;
             padding: 0;
             display: flex;
@@ -15,7 +15,7 @@
         }
 
         h1 {
-            color: #ffc107; /* Yellow text */
+            color: #ffc107;
             font-size: 30px;
             font-family: Menlo, Monaco, fixed-width;
         }
@@ -32,9 +32,47 @@
             color: white;
             font-size: 24px;
             text-decoration: underline;
-            margin-bottom: 0; /* Adjusted margin to align horizontally */
-            margin-top: 20px; /* Adjusted margin to align horizontally */
+            margin-bottom: 0;
+            margin-top: 20px;
         }
+
+        .help-container {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+            margin-right: 20px;
+        }
+
+        .help {
+            color: #ffc107;
+            font-size: 16px;
+            margin-right: 20px;
+        }
+
+        .logout-button {
+            background-color: #ffc107;
+            color: black;
+            border: none;
+            padding: 5px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 25px;
+            margin-top: -20px;
+            transition: background-color 0.3s;
+        }
+
+            .logout-button:hover {
+                background-color: #ffe066;
+            }
+
+        .help a {
+            color: #ffc107;
+            text-decoration: none;
+        }
+
+            .help a:hover {
+                text-decoration: underline;
+            }
 
         .button-container {
             display: flex;
@@ -47,43 +85,71 @@
             position: relative;
         }
 
+        .buttons-wrapper {
+            background-color: #2539CC;
+            border-radius: 30px;
+            padding: 20px;
+        }
+
         .button {
-            background-color: #1c224c; /* Dark blue button */
+            background-color: #1c224c;
             color: white;
             border: none;
-            padding: 10px 20px;
+            padding: 75px 60px;
             margin: 0 10px;
             font-size: 16px;
             cursor: pointer;
             border-radius: 25px;
             transition: background-color 0.3s;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            position: relative;
         }
 
             .button:hover {
-                background-color: #283358; /* Darker blue on hover */
+                background-color: #102E44;
             }
 
-        .button-decoration {
+            .button img {
+                position: center;
+                max-width: 100%;
+                max-height: 100%;
+                z-index: 2;
+            }
+
+        .button-text {
             position: absolute;
-            top: -05px; /* Adjusted position to avoid overlap */
-            left: -20px; /* Adjusted position to avoid overlap */
-            width: calc(100% + 40px); /* Adjusted size to avoid overlap */
-            height: calc(100% + 40px); /* Adjusted size to avoid overlap */
-            background-color: #2539CC; /* Light blue */
-            z-index: 0;
-            border-radius: 25px; /* Rounded corners */
+            bottom: 1px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
         }
     </style>
 </head>
 <body>
     <img src="Images/Logo.png" alt="ThreeSoft Logo" class="logo">
     <div class="welcome">Welcome</div>
+    <div class="help-container">
+        <div class="help">Question? Need Help? <a href="contact.html">Contact us</a></div>
+        <button class="logout-button" onclick="window.location.href='login.html'">Logout</button>
+    </div>
     <div class="button-wrapper">
-        <div class="button-decoration"></div>
-        <div class="button-container">
-            <button class="button" onclick="window.location.href='search.html'">Search Programs and Accommodations</button>
-            <button class="button" onclick="window.location.href='contact.html'">Contact Schools</button>
-            <button class="button" onclick="window.location.href='discussion.html'">Discussion Forum</button>
+        <div class="buttons-wrapper">
+            <div class="button-container">
+                <button class="button" onclick="window.location.href='search.html'">
+                    <img src="Images/Search.png" alt="Search Icon">
+                    <span class="button-text">Search Programs and Accommodations</span>
+                </button>
+                <button class="button" onclick="window.location.href='contact.html'">
+                    <img src="Images/Contact.png" alt="Contact Icon">
+                    <span class="button-text">Contact Schools</span>
+                </button>
+                <button class="button" onclick="window.location.href='discussion.html'">
+                    <img src="Images/Discuss.png" alt="Discussion Icon">
+                    <span class="button-text">Discussion Forum</span>
+                </button>
+            </div>
         </div>
     </div>
 </body>
