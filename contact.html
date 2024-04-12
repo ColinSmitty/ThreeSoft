@@ -1,25 +1,34 @@
 <!DOCTYPE html>
+<html>
 <head>
-	<title>HTML and CSS "Hello World"</title>
-	<style>
-		body {
-			background-color: #2D2D2D;
-		}
-		
-		h1 {
-			color: #C26356;
-			font-size: 30px;
-			font-family: Menlo, Monaco, fixed-width;
-		}
-		
-		p {
-			color: white;
-			font-family: "Source Code Pro", Menlo, Monaco, fixed-width;
-		}
-	</style>
+	<title>Contact a School</title>
+	<link rel="stylesheet" type="text/css" href="Styles/styles.css">
 </head>
 <body>
-	<h1>ThreeSoft</h1>
-
+	<a href="index.html"><img src="Images/Logo.png" alt="ThreeSoft Logo" class="logo"></a>
+	<div class="welcome">Contact a School</div>
+	<div class="help-container">
+		<div class="help">Question? Need Help? <a href="contact.html">Contact us</a></div>
+		<button class="logout-button" onclick="window.location.href='login.html'">Logout</button>
+	</div>
+	<div class="button-wrapper">
+		<div class="buttons-wrapper">
+			<div class="search-container">
+				<div class="search-input">
+					<label for="keyword">Tags/Keyword:</label>
+					<input type="text" id="keyword" name="keyword" placeholder="Enter Tags/Keyword">
+				</div>
+				<div class="search-input">
+					<label for="location">Location:</label>
+					<input type="text" id="location" name="location" placeholder="Enter Location">
+				</div>
+				<div class="search-input">
+					<label for="school">School Board:</label>
+					<input type="text" id="school" name="school" placeholder="Enter School/School Board">
+				</div>
+			</div>
+			<button class="search-button" onclick="search()">Search</button>
+		</div>
+	</div>
 </body>
 </html>
