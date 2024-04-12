@@ -1,25 +1,31 @@
 <!DOCTYPE html>
+<html>
 <head>
-	<title>HTML and CSS "Hello World"</title>
-	<style>
-		body {
-			background-color: #2D2D2D;
-		}
-		
-		h1 {
-			color: #C26356;
-			font-size: 30px;
-			font-family: Menlo, Monaco, fixed-width;
-		}
-		
-		p {
-			color: white;
-			font-family: "Source Code Pro", Menlo, Monaco, fixed-width;
-		}
-	</style>
+	<title>Register</title>
+	<link rel="stylesheet" type="text/css" href="Styles/styles.css">
 </head>
-<body>
-	<h1>ThreeSoft</h1>
-
+<body class="login-page">
+	<a href="index.html"><img src="Images/Logo.png" alt="ThreeSoft Logo" class="logo"></a>
+	<div class="welcome">Let's Get Started...</div>
+	<div class="help-container">
+		<div class="help">Question? Need Help? <a href="contactUs.html">Contact us</a></div>
+	</div>
+	<div class="help-container">
+		<div class="decorative-square">
+			<div class="form-container">
+				<form class="login-form">
+					<div class="form-input">
+						<label for="username">Username:</label>
+						<input type="text" id="username" name="username" placeholder="Enter Username">
+					</div>
+					<div class="form-input">
+						<label for="password">Password:</label>
+						<input type="password" id="password" name="password" placeholder="Enter Password">
+					</div>
+					<button type="submit" class="register-button">Register</button>
+				</form>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
