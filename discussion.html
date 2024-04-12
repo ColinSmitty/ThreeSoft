@@ -1,25 +1,33 @@
 <!DOCTYPE html>
+<html>
 <head>
-	<title>HTML and CSS "Hello World"</title>
-	<style>
-		body {
-			background-color: #2D2D2D;
-		}
-		
-		h1 {
-			color: #C26356;
-			font-size: 30px;
-			font-family: Menlo, Monaco, fixed-width;
-		}
-		
-		p {
-			color: white;
-			font-family: "Source Code Pro", Menlo, Monaco, fixed-width;
-		}
-	</style>
+	<title>Discussion Forum</title>
+	<link rel="stylesheet" type="text/css" href="Styles/styles.css">
 </head>
 <body>
-	<h1>ThreeSoft</h1>
-
+	<a href="index.html"><img src="Images/Logo.png" alt="ThreeSoft Logo" class="logo"></a>
+	<div class="welcome">Discussion</div>
+	<div class="help-container">
+		<div class="help">Question? Need Help? <a href="contact.html">Contact us</a></div>
+		<button class="logout-button" onclick="window.location.href='login.html'">Logout</button>
+	</div>
+	<div class="button-wrapper">
+		<div class="buttons-wrapper">
+			<div class="button-container">
+				<button class="button" onclick="window.location.href='searchThreads.html'">
+					<img src="Images/Search.png" alt="Search Icon">
+					<span class="button-text">Search Threads</span>
+				</button>
+				<button class="button" onclick="window.location.href='createThreads.html'">
+					<img src="Images/Add.png" alt="Add Icon">
+					<span class="button-text">Create a Thread</span>
+				</button>
+				<button class="button" onclick="window.location.href='myThreads.html'">
+					<img src="Images/myThreads.png" alt="My Threads">
+					<span class="button-text">My Threads</span>
+				</button>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
