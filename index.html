@@ -8,20 +8,44 @@
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
             height: 100vh;
         }
-        
+
         h1 {
             color: #ffc107; /* Yellow text */
             font-size: 30px;
             font-family: Menlo, Monaco, fixed-width;
         }
+
+        .logo {
+            max-width: 200px;
+            margin-bottom: 20px;
+        }
+
+        .button-container {
+            display: flex;
+        }
+
+        .button {
+            background-color: #28a745; /* Green button */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
-    <h1>Hello ThreeSoft</h1>
+    <img src="Images/Logo.png" alt="ThreeSoft Logo" class="logo">
+    <div class="button-container">
+        <button class="button" onclick="window.location.href='search.html'">Search</button>
+        <button class="button" onclick="window.location.href='contact.html'">Contact</button>
+        <button class="button" onclick="window.location.href='discussion.html'">Discussion</button>
+    </div>
 </body>
 </html>
-
