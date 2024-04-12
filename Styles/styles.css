@@ -120,3 +120,45 @@ h1 {
     transform: translateX(-50%);
     z-index: 1;
 }
+
+.search-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.search-input {
+    margin-right: 20px;
+}
+
+    .search-input label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .search-input input {
+        width: 200px;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+.search-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block; /* Ensure the button behaves like a block element */
+    margin: 20px auto; /* Center the button horizontally */
+}
+
+
+
+    .search-button:hover {
+        background-color: #45a049;
+    }
+
